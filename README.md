@@ -14,3 +14,15 @@
 npm create vite@latest
 ```
 
+- Iniciar el aplicativo
+
+1. Ingresar en el directorio del proyecto EJ: 
+```bash
+cd poc-seguridad
+```
+
+2. Instalar dependencias
+
+```bash
+npm install
+```
