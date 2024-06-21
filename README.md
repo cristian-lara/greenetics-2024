@@ -26,3 +26,9 @@ cd poc-seguridad
 ```bash
 npm install
 ```
+
+3. Levantar en modo local
+
+```bash
+npm run dev
+```
