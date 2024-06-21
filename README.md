@@ -10,6 +10,8 @@
 
 - Crear el proyecto react con **VITE**
 
+Va solicitar crear un nombre EJ "poc-seguridad", adicional me va solicitar seleccionar la tecnologia y debo seleccionar REACT con javascript
+
 ```bash
 npm create vite@latest
 ```
@@ -32,3 +34,4 @@ npm install
 ```bash
 npm run dev
 ```
+
