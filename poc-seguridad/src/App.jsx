@@ -7,14 +7,6 @@ function App() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState('Greenetics');
 
-  let nombre = 'Cristian';
-
-  const setNombre = ()=> {
-    nombre= 'Raul'
-    console.log('dio click en cambiar nombre', nombre)
-    return nombre
-  }
-
   return (
     <>
       <div>
