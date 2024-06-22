@@ -6,7 +6,12 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0);
   const [name, setName] = useState('Greenetics');
+  const [output, setOutput] = useState('')
 
+  const enviarAGuardar = ()=>{
+    console.log('va a guardar', name)
+    setOutput(name);
+  }
   return (
     <>
       <div>
@@ -19,9 +24,10 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <h3>{name}</h3>
-      <button onClick={()=> setName('Raul')}>Cambiar nombre</button>
+      <button onClick={()=> setName('')}>Reset</button>
       <label htmlFor="">Nombre: </label>
       <input type="text" value={name} onChange={(event)=> setName(event.target.value)} />
+      <button onClick={enviarAGuardar}>Enviar</button>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -33,6 +39,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <h1>Se esta enviando al backend esto</h1>
+      <div dangerouslySetInnerHTML={{__html: output}}></div>
     </>
   )
 }
