@@ -4,7 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
+  const [name, setName] = useState('Greenetics');
+
+  let nombre = 'Cristian';
+
+  const setNombre = ()=> {
+    nombre= 'Raul'
+    console.log('dio click en cambiar nombre', nombre)
+    return nombre
+  }
 
   return (
     <>
@@ -17,6 +26,10 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
+      <h3>{name}</h3>
+      <button onClick={()=> setName('Raul')}>Cambiar nombre</button>
+      <label htmlFor="">Nombre: </label>
+      <input type="text" value={name} onChange={(event)=> setName(event.target.value)} />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
